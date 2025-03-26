@@ -10,7 +10,7 @@ I'm a software developer with a focus on building efficient and scalable applica
 
 [![My Skills](https://skillicons.dev/icons?i=django,flask,html,css,react,vue,git,github,docker,aws,mysql,postgres,sqlite&perline=8)](https://skillicons.dev)
 
-![Alt Text](The-Divine-Touch-1536x1086%20(1).svg)
+
 
 ## Top Projects
 
@@ -39,3 +39,4 @@ I'm a software developer with a focus on building efficient and scalable applica
 https://medium.com/@sachinchakradhar8/hungry-grab-your-phone-get-food-recommendations-based-on-your-cravings-79a169e259f9
 
 ## Connect with Me
+![Alt Text](The-Divine-Touch-1536x1086%20(1).svg)
