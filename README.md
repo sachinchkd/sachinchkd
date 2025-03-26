@@ -1,5 +1,5 @@
-I Create Therefore I am.
-Curious Learner with great mind in solving problems interest in Data Science, Machine Learning/ Artificial Intelligence and Full Stack Development.
+"I Create, Therefore I Am." 🚀 
+Curious Learner with great mind in solving problems exploring realm of Data Science, Machine Learning/ Artificial Intelligence and Full Stack Development.
  
 
 ## 🌐 Socials:
