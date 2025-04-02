@@ -1,4 +1,4 @@
-## नमस्ते, 
+## नमस्ते
 
 I'm Sachin Chakradhar, curious Learner with great mind in solving problems exploring realm of Data Science, Machine Learning/ Artificial Intelligence and Full Stack Development from Bhaktapur, Nepal. I love creating innovative solutions and exploring new technologies. Let's connect and collaborate!
 
