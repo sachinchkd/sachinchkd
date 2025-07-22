@@ -2,6 +2,8 @@
 
 I'm Sachin Chakradhar, curious Learner with great mind in solving problems exploring realm of Data Science, Machine Learning/ Artificial Intelligence and Full Stack Development from Bhaktapur, Nepal. I love creating innovative solutions and exploring new technologies. Let's connect and collaborate!
 
+[www.sachinchakradhar.com.np](https://www.sachinchakradhar.com.np/)
+
 ## About Me
 
 I'm a software developer with a focus on building efficient and scalable applications. Based in Bhaktapur, Nepal, I'm constantly learning and evolving in the tech landscape. I enjoy solving complex problems and collaborating with like-minded individuals.
