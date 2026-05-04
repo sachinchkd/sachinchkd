@@ -1,43 +1,115 @@
-## नमस्ते
+<h1 align="center">नमस्ते, This is Sachin Chakradhar 👋</h1>
 
-I'm Sachin Chakradhar, curious Learner with great mind in solving problems exploring realm of Data Science, Machine Learning/ Artificial Intelligence and Full Stack Development from Bhaktapur, Nepal. I love creating innovative solutions and exploring new technologies. Let's connect and collaborate!
+<h3 align="center">
+  Curious Learner • Software Developer • AI/ML Explorer • Full Stack Developer
+</h3>
 
-[www.sachinchakradhar.com.np](https://www.sachinchakradhar.com.np/)
+<p align="center">
+  <a href="https://www.sachinchakradhar.com.np/">Portfolio</a> •
+  <a href="https://github.com/sachin-chakradhar">GitHub</a> •
+  <a href="https://medium.com/@sachinchakradhar8">Medium</a>
+</p>
 
-## About Me
+---
 
-I'm a software developer with a focus on building efficient and scalable applications. Based in Bhaktapur, Nepal, I'm constantly learning and evolving in the tech landscape. I enjoy solving complex problems and collaborating with like-minded individuals.
+## 👨‍💻 About Me
 
-## Skills & Technologies
+This is **Sachin Chakradhar**, a software developer from **Bhaktapur, Nepal** with a strong interest in **Data Science, Machine Learning, Artificial Intelligence, and Full Stack Development**.
 
-[![My Skills](https://skillicons.dev/icons?i=django,flask,html,css,react,vue,git,github,docker,aws,mysql,postgres,sqlite&perline=8)](https://skillicons.dev)
+I enjoy building efficient, scalable, and meaningful applications while continuously exploring new technologies. I love solving problems, learning by building, and collaborating with people who are passionate about technology.
 
+---
 
+## 🚀 What I'm Interested In
 
-## Top Projects
+- Full Stack Web Development
+- Data Science and Machine Learning
+- Artificial Intelligence
+- Backend Engineering
+- Scalable Web Applications
+- Open Source and Collaboration
 
+---
 
+## 🛠️ Skills & Technologies
 
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=python,django,flask,html,css,js,react,vue,git,github,docker,aws,mysql,postgres,sqlite&perline=8" />
+</p>
 
+---
 
+## 🌟 Featured Projects
 
-## GitHub Stats
-🌟 **Public Repositories:** 63  
-👥 **Followers:** 7  
-🔗 **Following:** 2  
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=sachinchkd&show_icons=true&hide_title=true)
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=sachinchkd&layout=compact&theme=dark)](https://github.com/anuraghazra/github-readme-stats)
+### 🍽️ FeedU — Food Recommendation System  
+Food recommendation platform that suggests meals based on user cravings and preferences.
 
-## Recent Activity
+**Tech Focus:** Recommendation System, Frontend Development, User Experience  
+🔗 [View Repository](https://github.com/sachin-chakradhar/FeedU_frontend)
 
-- Created [Python_Project_Based_Practice](https://github.com/sachinchkd/Python_Project_Based_Practice) on March 23, 2025  
-- Pushed updates to [Linear-App-Clone](https://github.com/sachinchkd/Linear-App-Clone) on March 18, 2025
-- Updated [DSA_Practice_Python](https://github.com/sachinchkd/DSA_Practice_Python) with new solutions on March 14, 2025
-- Deployed updates to [FeedU_frontend](https://github.com/sachinchkd/FeedU_frontend) on March 9, 2025
+---
 
-## Latest Blog Posts
+### 🧠 Python Project Based Practice  
+A collection of Python projects created to strengthen real-world programming skills through hands-on practice.
 
-https://medium.com/@sachinchakradhar8/hungry-grab-your-phone-get-food-recommendations-based-on-your-cravings-79a169e259f9
+**Tech Focus:** Python, Problem Solving, Project-Based Learning  
+🔗 [View Repository](https://github.com/sachin-chakradhar/Python_Project_Based_Practice)
 
-## Connect with Me
-![Alt Text](The-Divine-Touch-1536x1086%20(1).svg)
+---
+
+### 📌 Linear App Clone  
+A clone inspired by Linear, focused on modern UI design and frontend development practices.
+
+**Tech Focus:** Frontend Development, UI/UX, React  
+🔗 [View Repository](https://github.com/sachin-chakradhar/Linear-App-Clone)
+
+---
+
+### 🧩 DSA Practice Python  
+A repository for practicing data structures, algorithms, and coding problem-solving using Python.
+
+**Tech Focus:** DSA, Python, Competitive Programming  
+🔗 [View Repository](https://github.com/sachin-chakradhar/DSA_Practice_Python)
+
+---
+
+## 📊 GitHub Stats
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=sachin-chakradhar&show_icons=true&hide_title=true&hide_border=true" height="165" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=sachin-chakradhar&layout=compact&hide_border=true" height="165" />
+</p>
+
+---
+
+## 📝 Latest Blog Post
+
+### Hungry? Grab Your Phone — Get Food Recommendations Based on Your Cravings
+
+I wrote about building a food recommendation experience that helps users discover meals based on what they feel like eating.
+
+🔗 [Read on Medium](https://medium.com/@sachinchakradhar8/hungry-grab-your-phone-get-food-recommendations-based-on-your-cravings-79a169e259f9)
+
+---
+
+## 🤝 Let's Connect
+
+I'm always open to learning, collaborating, and building meaningful projects.
+
+<p align="center">
+  <a href="https://www.sachinchakradhar.com.np/">
+    <img src="https://img.shields.io/badge/Portfolio-Visit-blue?style=for-the-badge" />
+  </a>
+  <a href="https://github.com/sachin-chakradhar">
+    <img src="https://img.shields.io/badge/GitHub-sachin--chakradhar-black?style=for-the-badge&logo=github" />
+  </a>
+  <a href="https://medium.com/@sachinchakradhar8">
+    <img src="https://img.shields.io/badge/Medium-Blog-black?style=for-the-badge&logo=medium" />
+  </a>
+</p>
+
+---
+
+<p align="center">
+  <b>“Learning by building. Growing by solving.”</b>
+</p>
