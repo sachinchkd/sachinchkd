@@ -39,40 +39,6 @@ I enjoy building efficient, scalable, and meaningful applications while continuo
 
 ---
 
-## 🌟 Featured Projects
-
-### 🍽️ FeedU — Food Recommendation System  
-Food recommendation platform that suggests meals based on user cravings and preferences.
-
-**Tech Focus:** Recommendation System, Frontend Development, User Experience  
-🔗 [View Repository](https://github.com/sachin-chakradhar/FeedU_frontend)
-
----
-
-### 🧠 Python Project Based Practice  
-A collection of Python projects created to strengthen real-world programming skills through hands-on practice.
-
-**Tech Focus:** Python, Problem Solving, Project-Based Learning  
-🔗 [View Repository](https://github.com/sachin-chakradhar/Python_Project_Based_Practice)
-
----
-
-### 📌 Linear App Clone  
-A clone inspired by Linear, focused on modern UI design and frontend development practices.
-
-**Tech Focus:** Frontend Development, UI/UX, React  
-🔗 [View Repository](https://github.com/sachin-chakradhar/Linear-App-Clone)
-
----
-
-### 🧩 DSA Practice Python  
-A repository for practicing data structures, algorithms, and coding problem-solving using Python.
-
-**Tech Focus:** DSA, Python, Competitive Programming  
-🔗 [View Repository](https://github.com/sachin-chakradhar/DSA_Practice_Python)
-
----
-
 ## 📊 GitHub Stats
 
 <p align="center">
