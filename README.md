@@ -82,7 +82,7 @@ Building scalable and meaningful applications...
   />
 </p> -->
 
-<table>
+<table align="center">
   <tr>
     <td width="50%" valign="top">
 
