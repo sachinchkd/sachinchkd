@@ -1,0 +1,195 @@
+name: Generate minesweeper animation
+
+on:
+  schedule:
+    - cron: "0 */12 * * *"
+
+  workflow_dispatch:
+
+  push:
+    branches:
+      - main
+
+jobs:
+  generate:
+    permissions:
+      contents: write
+
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Generate minesweeper contribution graph
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_USERNAME: ${{ github.repository_owner }}
+        run: |
+          mkdir -p dist
+
+          cat > generate_minesweeper.py <<'PY'
+          import os
+          import json
+          import urllib.request
+
+          token = os.environ["GITHUB_TOKEN"]
+          username = os.environ["GITHUB_USERNAME"]
+
+          query = """
+          query($login: String!) {
+            user(login: $login) {
+              contributionsCollection {
+                contributionCalendar {
+                  totalContributions
+                  weeks {
+                    contributionDays {
+                      date
+                      weekday
+                      contributionCount
+                    }
+                  }
+                }
+              }
+            }
+          }
+          """
+
+          payload = json.dumps({
+              "query": query,
+              "variables": {"login": username}
+          }).encode("utf-8")
+
+          req = urllib.request.Request(
+              "https://api.github.com/graphql",
+              data=payload,
+              headers={
+                  "Authorization": f"Bearer {token}",
+                  "Content-Type": "application/json"
+              }
+          )
+
+          with urllib.request.urlopen(req) as response:
+              data = json.loads(response.read().decode("utf-8"))
+
+          calendar = data["data"]["user"]["contributionsCollection"]["contributionCalendar"]
+          weeks = calendar["weeks"]
+
+          cells = []
+          for week_index, week in enumerate(weeks):
+              for day in week["contributionDays"]:
+                  cells.append({
+                      "week": week_index,
+                      "weekday": day["weekday"],
+                      "date": day["date"],
+                      "count": day["contributionCount"]
+                  })
+
+          active_days = [c for c in cells if c["count"] > 0]
+          active_days.sort(key=lambda x: x["count"], reverse=True)
+
+          mine_count = min(max(8, len(active_days) // 8), 45)
+          mines = set((c["week"], c["weekday"]) for c in active_days[:mine_count])
+
+          positions = {(c["week"], c["weekday"]): c for c in cells}
+
+          def nearby_mines(week, weekday):
+              total = 0
+              for dx in [-1, 0, 1]:
+                  for dy in [-1, 0, 1]:
+                      if dx == 0 and dy == 0:
+                          continue
+                      if (week + dx, weekday + dy) in mines:
+                          total += 1
+              return total
+
+          def level(count):
+              if count == 0:
+                  return 0
+              if count < 3:
+                  return 1
+              if count < 6:
+                  return 2
+              if count < 10:
+                  return 3
+              return 4
+
+          def generate_svg(theme):
+              dark = theme == "dark"
+
+              bg = "#0d1117" if dark else "#ffffff"
+              title = "#f0f6fc" if dark else "#24292f"
+              subtitle = "#8b949e" if dark else "#57606a"
+              covered = "#21262d" if dark else "#ebedf0"
+              border = "#30363d" if dark else "#d0d7de"
+
+              colors = [
+                  covered,
+                  "#9be9a8",
+                  "#40c463",
+                  "#30a14e",
+                  "#216e39"
+              ]
+
+              cell = 12
+              gap = 3
+              left = 20
+              top = 54
+              width = left * 2 + len(weeks) * (cell + gap)
+              height = 180
+
+              svg = []
+              svg.append(f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}">')
+              svg.append(f'<rect width="100%" height="100%" rx="14" fill="{bg}"/>')
+
+              svg.append(f'<text x="{width / 2}" y="26" text-anchor="middle" font-family="monospace" font-size="16" font-weight="700" fill="{title}">MINESWEEPER CONTRIBUTIONS</text>')
+              svg.append(f'<text x="{width / 2}" y="44" text-anchor="middle" font-family="monospace" font-size="10" fill="{subtitle}">commits reveal the board • mines mark power days</text>')
+
+              for c in cells:
+                  x = left + c["week"] * (cell + gap)
+                  y = top + c["weekday"] * (cell + gap)
+                  pos = (c["week"], c["weekday"])
+                  count = c["count"]
+
+                  if pos in mines:
+                      fill = "#f85149" if dark else "#cf222e"
+                      text = "✹"
+                      text_color = "#ffffff"
+                  elif count > 0:
+                      fill = colors[level(count)]
+                      number = nearby_mines(c["week"], c["weekday"])
+                      text = str(number) if number > 0 else ""
+                      text_color = "#0d1117"
+                  else:
+                      fill = covered
+                      text = ""
+                      text_color = subtitle
+
+                  svg.append(f'<rect x="{x}" y="{y}" width="{cell}" height="{cell}" rx="2" fill="{fill}" stroke="{border}" stroke-width="0.5">')
+                  svg.append(f'<title>{c["date"]}: {count} contributions</title>')
+                  svg.append('</rect>')
+
+                  if text:
+                      svg.append(f'<text x="{x + cell / 2}" y="{y + 9.5}" text-anchor="middle" font-family="monospace" font-size="9" font-weight="700" fill="{text_color}">{text}</text>')
+
+              legend_y = height - 28
+              svg.append(f'<text x="{left}" y="{legend_y}" font-family="monospace" font-size="11" fill="{subtitle}">□ empty  ▣ revealed  ✹ power day</text>')
+              svg.append(f'<text x="{width - left}" y="{legend_y}" text-anchor="end" font-family="monospace" font-size="11" fill="{subtitle}">@{username}</text>')
+
+              svg.append("</svg>")
+              return "\n".join(svg)
+
+          with open("dist/minesweeper-contribution-graph.svg", "w", encoding="utf-8") as f:
+              f.write(generate_svg("light"))
+
+          with open("dist/minesweeper-contribution-graph-dark.svg", "w", encoding="utf-8") as f:
+              f.write(generate_svg("dark"))
+          PY
+
+          python generate_minesweeper.py
+
+      - name: Push minesweeper SVG to output branch
+        uses: crazy-max/ghaction-github-pages@v3.1.0
+        with:
+          target_branch: minesweeper-output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
