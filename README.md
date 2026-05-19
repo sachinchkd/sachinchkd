@@ -51,7 +51,7 @@ Building scalable and meaningful applications...
 
 
 <p align="center">
-    <h3>Skills & Technologies</h3>
+    <h3 align="center">Skills & Technologies</h3>
   <img src="https://skillicons.dev/icons?i=python,django,flask,html,css,js,ts,react,nextjs,vue,tailwind,nodejs,nestjs,graphql,go,rust,docker,aws,mysql,postgres,sqlite,git,github&theme=dark" />
 </p>
 
@@ -73,17 +73,22 @@ Building scalable and meaningful applications...
 </picture>
 
 
-## 🏆 GitHub Trophies
+---
 
-<p align="center">
+<!-- <p align="center">
+  <h3 align="center">GitHub Trophies</h3>
   <img 
     src="https://github-profile-trophy.vercel.app/?username=sachin-chakradhar&theme=matrix&no-frame=true&margin-w=15" 
   />
-</p>
+</p> -->
 
-```txt
-## Interests
+<table>
+  <tr>
+    <td width="50%" valign="top">
 
+
+<pre>
+> Interests
 [+] Full Stack Web Development
 [+] Artificial Intelligence
 [+] Machine Learning
@@ -91,22 +96,33 @@ Building scalable and meaningful applications...
 [+] Data Science
 [+] Scalable Web Applications
 [+] Open Source Collaboration
-```
+</pre>
+  </td>
 
-```terminal
+  <td width="50%" valign="top">
+
+
+
+<pre>
 > Initializing profile...
 
-✔ Focus: AI/ML + Full Stack Development
-✔ Passion: Building scalable and meaningful applications
+✔ Focus: AI/ML + Full Stack Development  
+✔ Passion: Building scalable and meaningful applications  
 ✔ Philosophy: Learning by building. Growing by solving.
-```
+</pre>
+
+  </td>
+  </tr>
+</table>
+
+---
+
+<h3 align="center">GitHub Stats</h3>
 
 <p align="center">
-  
-  <h3>GitHub Stats</h3>
   <img 
     src="https://github-readme-streak-stats.herokuapp.com/?user=sachin-chakradhar&theme=tokyonight&hide_border=true" 
-    height="170" 
+    height="170"
   />
 </p>
 
