@@ -1,31 +1,7 @@
 <h4 align="center">
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=34&pause=1000&color=00FF99&center=true&vCenter=true&width=800&lines=Frontend+Developer;Software+Developer;AI%2FML+Explorer;Full+Stack+Developer" alt="Typing SVG" />
 
-  
-
-  
-</h1>
-
-
-
----
-
-```bash
-> whoami
-Sachin Chakradhar
-
-> location
-Bhaktapur, Nepal
-
-> interests
-AI/ML • Full Stack • Data Science • Backend Engineering
-
-> status
-Building scalable and meaningful applications...
-
-```
-
-<p align="center" align="center" style="display:flex; justify-content:center; gap:20px;">
+  <p align="center" align="center" style="display:flex; justify-content:center; gap:20px;">
 
   <a href="https://www.sachinchakradhar.com.np/">
     <img 
@@ -46,6 +22,27 @@ Building scalable and meaningful applications...
   </a>
 
 </p>
+ 
+</h1>
+
+
+
+```bash
+> whoami
+Sachin Chakradhar
+
+> location
+Bhaktapur, Nepal
+
+> interests
+AI/ML • Full Stack • Data Science • Backend Engineering
+
+> status
+Building scalable and meaningful applications...
+
+```
+
+
 
 
 
@@ -59,19 +56,9 @@ Building scalable and meaningful applications...
 </p>
 
 
-
-
-
  ---
 
-<p align="center">
-  
-  <h3>GitHub Stats</h3>
-  <img 
-    src="https://github-readme-streak-stats.herokuapp.com/?user=sachin-chakradhar&theme=tokyonight&hide_border=true" 
-    height="170" 
-  />
-</p>
+
 
 
 
@@ -80,11 +67,11 @@ Building scalable and meaningful applications...
 ###
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/maurodesouza/maurodesouza/pacman-output/pacman-contribution-graph-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/maurodesouza/maurodesouza/pacman-output/pacman-contribution-graph.svg">
-  <img alt="pacman contribution graph" src="https://raw.githubusercontent.com/maurodesouza/maurodesouza/pacman-output/pacman-contribution-graph.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/sachinchkd/sachinchkd/pacman-output/pacman-contribution-graph-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/sachinchkd/sachinchkd/pacman-output/pacman-contribution-graph.svg">
+  <img alt="pacman contribution graph" src="https://raw.githubusercontent.com/sachinchkd/sachinchkd/pacman-output/pacman-contribution-graph.svg">
 </picture>
----
+
 
 ## 🏆 GitHub Trophies
 
@@ -113,6 +100,15 @@ Building scalable and meaningful applications...
 ✔ Passion: Building scalable and meaningful applications
 ✔ Philosophy: Learning by building. Growing by solving.
 ```
+
+<p align="center">
+  
+  <h3>GitHub Stats</h3>
+  <img 
+    src="https://github-readme-streak-stats.herokuapp.com/?user=sachin-chakradhar&theme=tokyonight&hide_border=true" 
+    height="170" 
+  />
+</p>
 
 ```txt
 > Code. Learn. Build. Repeat.
