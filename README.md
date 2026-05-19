@@ -129,10 +129,10 @@ Building scalable and meaningful applications...
 ```txt
 > Code. Learn. Build. Repeat.
 ```
-<picture align="center">
+<!-- <picture align="center">
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/sachinchkd/sachinchkd/minesweeper-output/minesweeper-contribution-graph-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/sachinchkd/sachinchkd/minesweeper-output/minesweeper-contribution-graph.svg">
   <br>
   <img alt="minesweeper contribution graph" src="https://raw.githubusercontent.com/sachinchkd/sachinchkd/minesweeper-output/minesweeper-contribution-graph.svg">
   <br>
-</picture>
+</picture> -->
